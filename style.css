@@ -1,0 +1,648 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.header{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.container{
+    padding: 10px;
+}
+.header__nav{
+    background-color: #fff;
+    display: flex;
+}
+.header__img{
+    width: 20%;
+}
+.img{
+    width: 250px;
+}
+.header__logo{
+    width: 20%;
+    align-self: center;
+}
+.logo{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: palevioletred;
+    text-shadow: 1px 1px 1px #222;
+}
+.tel{
+    font-size: 25px;
+    color: #222;
+}
+.links__nav{
+    width: 60%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.links__item{
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px;
+    margin-left: 20px;
+    list-style-type: none;
+}
+.links__item a:hover{
+    cursor: pointer;
+    color: palevioletred;
+}
+.links__item a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    font-family: 'Playfair Display', serif;
+}
+.intro{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+    background-color: #eee;
+}
+.intro__inner{
+    display: flex;
+    background-image: url(img/leaf.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.span__logo{
+    color: palevioletred;
+    text-shadow: 1px 1px 1px #222;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+}
+.intro__subtitle{
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    color: #222;
+    font-size: 30px;
+    margin-top: 30px;
+}
+.intro__title{
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    color: #222;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.intro__text{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 18px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.btn{
+    font-family: 'Playfair Display';
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    font-size: 25px;
+    color: palevioletred;
+    text-shadow: 1px 1px 1px #222;
+    text-decoration: none;
+}
+.btn:hover{
+    color: #222;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.intro__img{
+    align-self: center;
+}
+.intro__img .img{
+    width: 100%;
+    background-image: url(img/intro__img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #222;
+    border: 1px solid #222;
+}
+
+
+.section{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container{
+    background-color: #fff;
+    text-align: center;
+}
+.section__header{
+    margin: 20px;
+}
+.section__img{
+    padding-top: 10px;
+}
+.section__suptitle{
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 20px;
+    color: #222;
+}
+.section__title{
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    margin-top: 20px;
+    color: #222;
+}
+.section__text{
+    margin-top: 20px;
+    color: #999;
+    font-size: 16px;
+}
+.section__imgs{
+    margin-top: 50px;
+}
+.section__imgs img{
+    width: 300px;
+}
+.section__adres{
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    margin-top: 20px;
+    color: #222;
+}
+.contacts__phone{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    color: palevioletred;
+    text-shadow: 1px 1px 1px #222;
+    text-decoration: none;
+}
+.mobile{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    display: block;
+    margin-top: 20px;
+}
+.img__contacts img{
+    margin-top: 50px;
+    box-shadow: 10px 10px 5px palevioletred;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    margin: 30px 10px;
+}
+.card__img img{
+    transition: opacity .1s linear;
+    width: 450px;
+    padding: 2px;
+}
+.card__inner{
+    margin: 10px;
+    padding: 5px;
+    position: relative;
+}
+.card__item:hover .card__img{
+    transform: translate3d(-10px, -10px, 0);
+}
+.card__item:hover .card__img img{
+    opacity: 0.5;
+}
+.card__img{
+    background: linear-gradient(to right, #ffffff, palevioletred);
+    transition: transform .2s linear;
+    padding: 2px;
+}
+
+.card__text a{
+    width: 100%;
+    opacity: 0;
+    text-decoration: none;
+    color: #222;
+    font-size: 35px;
+    font-family: 'Playfair Display';
+    font-style: italic;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0);
+    transition: opacity .2s linear;
+}
+.card__item:hover .card__text a{
+    opacity: 1;
+}
+.title__price{
+    font-family: 'Playfair Display';
+    font-style: italic;
+    font-size: 25px;
+    color: #222;
+    text-shadow: 2px 2px 5px palevioletred;
+}
+.price{
+    font-family: 'Playfair Display';
+    font-size: 15px;
+    margin: 10px 0;
+    color: #222;
+}
+.img__contacts img{
+    width: 60%;
+}
+.maps{
+    margin-top: 20px;
+    box-shadow: 10px 10px 5px palevioletred;
+}
+
+.cards__item{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-image: url(img/leaff.png);
+    object-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    margin-bottom: 20px;
+}
+
+.cards__img{
+    width: 40%;
+    background-image: url(img/about_us/Анастасия-администратор\ и\ консультант\ по\ загару.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 10px 10px 5px palevioletred;
+}
+
+.cards__text{
+    width: 60%;
+    margin: 30px;
+    align-self: center;
+    padding: 30px;    
+}
+.text__title{
+    font-size: 30px;
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #222;
+}
+.text__subtitle{
+    font-family: 'Playfair Display';
+    font-weight: 700;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+.text{
+    color: #999;
+}
+
+.map{
+    max-width: 1200px;
+    margin: 0 auto;
+    background: url(img/map-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60px;
+    background-color: #e6e6e6;
+}
+.map__title{
+    font-size: 25px;
+    font-weight: 700;
+    color: #222;
+}
+.map__title a{
+    font-family: 'Playfair Display';
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #222;
+}
+.map__title a:hover{
+    text-decoration: underline;
+}
+
+
+.footer{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.footer__nav{
+    margin: 20px;
+}
+.f__logo{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: palevioletred;
+    text-shadow: 1px 1px 1px #222;
+}
+.footer__links{
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.footer__text{
+    margin-top: 50px;
+    font-family: 'Playfair Display';
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+}
+.footer__flov{
+    width: 50px;
+}
+.fa-instagram{
+    color: #222;
+    font-weight: 300;
+    font-size: 50px;
+    padding: 30px 35px 50px;
+} 
+iframe{
+    width: 100%;
+    height: 450px;
+}
+
+
+@media ( max-width: 1150px) {
+    .img{
+        width: 230px;
+    }
+    .logo{
+        font-size: 25px;
+    }
+    .tel{
+        font-size: 20px;
+    }
+    .links__item{
+        font-size: 20px;
+    }
+    .intro__title{
+        font-size: 30px;
+    }
+    .intro__img{
+        align-self: center;
+        margin-left: 50px;
+    }
+    .photo{
+        width: 450px;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__inner{
+        margin-bottom: 20px;
+    }
+}
+
+@media ( max-width: 950px) {
+    .img{
+        width: 200px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .tel{
+        font-size: 18px;
+    }
+    .links__item a{
+        font-size: 20px;
+    }
+    .hed a{
+        font-size: 18px;
+    }
+    .photo{
+        width: 400px;
+    }
+    .card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card__text{
+        font-size: 25px;
+    }
+    .cards__img{
+        object-fit: cover;
+    }
+}
+
+@media ( max-width: 850px) {
+    .img{
+        width: 170px;
+    }
+    .logo{
+        font-size: 20px;
+    }
+    .tel{
+        font-size: 15px;
+    }
+    .links__item{
+        margin-left: 3px;
+    }
+    .links__item a{
+        font-size: 15px;
+    }
+    .intro__subtitle{
+        font-size: 22px;
+    }
+    .intro__title{
+        font-size: 30px;
+    }
+    .photo{
+        width: 350px;
+    }
+    .section__title{
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .cards__img{
+        object-fit: cover;
+    }
+}
+
+@media ( max-width: 720px) {
+    .tel{
+        font-size: 13px;
+    }
+    .intro__inner{
+        justify-content: center;
+    }
+    .header__logo{
+        width: 200px;
+        margin-left: 18px;
+    }
+    .logo{
+        font-size: 23px;
+    }
+    .hed a{
+        font-size: 15px;
+    }
+    .cards__img{
+        width: 45%;
+    }
+    .links__item{
+        font-size: 18px;
+    }
+    .links__nav{
+        flex-wrap: wrap;
+    }
+    .img{
+        width: 150px;
+    }
+    .intro__img{
+        display: none;       
+    }
+    .card__text a{
+        font-size: 25px;
+    }
+    .card__img img{
+        width: 370px;
+    }
+    .text__title{
+        font-size: 25px;
+    }
+    .cards__img{
+        object-fit: cover;
+        object-position: center;
+        width: 40%;
+    }
+}
+@media ( max-width: 600px) {
+    .img{
+        width: 150px;
+    }
+    .logo{
+        width: 300px;
+        font-size: 25px;
+    }
+    .links__item a{
+        font-size: 15px;
+    }
+    .header__nav{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .header__logo{
+        width: 300px;
+    }
+    .links__nav{
+        justify-content: space-evenly;
+        width: 500px;
+    }
+    .card{
+        margin: 5px;
+    }
+    .cards__img{
+        width: 90%;
+    }
+    .cards__item{
+        flex-wrap: wrap;
+        background-image: none;
+    }
+    .cards__text{
+        padding: 15px;
+        margin: 15px;
+    }
+    .map__title{
+        font-size: 20px;
+    }
+}
+
+@media ( max-width: 500px) {
+    .tel{
+        font-size: 18px;
+    }
+    .header__nav{
+        justify-content: center;
+    }
+    .header__img{
+        width: 100%;
+    }
+    .links__item a{
+        font-size: 12px;
+    }
+    .cards__img{
+        width: 90%;
+    }
+
+}
+
+@media ( max-width: 420px) {
+    .header__nav{
+        justify-content: center;
+    }
+    .header__img{
+        width: 100%;
+    }
+    .logo{
+        width: 100%;
+    }
+    .hed a{
+        font-size: 25px;
+    }
+    .links__item a{
+        font-size: 8px;
+    }
+    .footer__links{
+        padding: 1px;
+    }
+    .footer__logo{
+        width: 100%;
+    }
+    .f__logo{
+        font-size: 20px;
+    }
+    .intro__subtitle{
+        font-size: 18px;
+    }
+    .intro__title{
+        font-size: 30px;
+    }
+    .text__title{
+        font-size: 20px;
+    }
+    .text__subtitle{
+        font-size: 15px;
+    }
+    .text{
+        width: 100%;
+        font-size: 15px;
+    }
+    .section__suptitle{
+        font-size: 12px;
+    }
+    .section__title{
+        font-size: 15px;
+    }
+    .section__text{
+        font-size: 15px;
+    }
+    .card__img img{
+        width: 280px;
+    }
+    .cards__img{
+        width: 90%;
+    }
+    .section__imgs{
+        overflow: hidden;
+    }
+}
